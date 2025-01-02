@@ -2,9 +2,12 @@
 @import url("styles/banner.css");
 @import url("styles/carrossel.css");
 @import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodape.css");
+
 
 :root{
-    --cor-de-fundo:#a4a3a3; 
+    --cor-de-fundo:#fafafa; 
     --branco:#FFFFFF;
     --laranja:#EB9B00;
     --azul:#326589;
