@@ -28,6 +28,10 @@
 }
 .container__botao:checked ~ .lista-menu{
     display: block;
+    width: auto;
+}
+.container__botao{
+    display: none;
 }
 .lista-menu__titulo,.lista-menu__item{
     padding: 1em;
@@ -43,12 +47,7 @@
     text-transform: uppercase;
     text-decoration: none;
 }
-.container__titulo{
-    display: none;
-}
-.opções{
-    display: none;
-}
+
 @media screen and (min-width: 1024px){
     .container__titulo, 
     .container__titulo_negrito{
@@ -76,5 +75,12 @@
     .container__imgt{
         display: none;
 
+    }
+    .opções__botões:checked ~ .lista-menu{
+        display: block;
+        width: auto;
+    }
+    .opções__botões{
+        display: none;
     }
 }
