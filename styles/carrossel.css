@@ -60,4 +60,18 @@
     color: var(--branco);
     font-weight: 700;
     text-decoration: none;
+    width:17%;
+}
+@media screen and ( min-width:1024px ){
+    .carrossel__titulo{
+        font-size: 30px;
+    }
+    .swiper-pagination{
+        margin:2em 0 3em 0;
+    }
+    .card{
+        width:55%;
+        margin: 2em auto;
+
+    }
 }
