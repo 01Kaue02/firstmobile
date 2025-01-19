@@ -47,6 +47,9 @@
     text-transform: uppercase;
     text-decoration: none;
 }
+.container__texto{
+    display: none;
+}
 
 @media screen and (min-width: 1024px){
     .container__titulo, 
@@ -83,4 +86,22 @@
     .opções__botões{
         display: none;
     }
+}
+@media screen and (min-width: 1728px){
+    .container__link{
+        align-items: center;
+        display: flex;
+        text-decoration: none;
+        color: var(--preto);
+    }
+    .cabeçalho{
+        padding: 0 2em;
+    }
+    .opções{
+        margin-right: auto;
+    }
+    .container__texto{
+        display: block;
+    }
+    
 }
