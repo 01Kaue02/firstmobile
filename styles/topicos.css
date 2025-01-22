@@ -1,7 +1,7 @@
 .tópico {
-    background: var(--azul1);
+    background: var(--azul);
     text-align: center;
-    padding: 1em 0;
+    padding: 1em 20vw;
 }
 .tópicos__titulo{
     color: var(--branco);
@@ -32,3 +32,12 @@
         font-size: 24px;
     }
 }
+    @media screen and ( min-width: 1728px ){
+        .tópico {
+            
+
+        }
+        .tópicos__titulo{
+            margin: 1em;
+        }
+    }

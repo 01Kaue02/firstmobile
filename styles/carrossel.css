@@ -75,3 +75,33 @@
 
     }
 }
+@media screen and ( min-width:1728px ){
+    .carrossel__container{
+        display: flex;
+        margin: 0 20vw 3em 20vw;
+        align-items:center;
+    }
+    .swiper{
+        width:50%;
+    }
+    .swiper-pagination{
+        margin: 1em ;
+    }
+    .carrossel__titulo{
+        font-size: 32px;
+    }
+    .descrição__texto{
+        font-size: 16px;
+    }
+    .card{
+       width:40%;
+       margin-left: 2em;
+    }
+    .descrição__titulo{
+        font-weight: 700;
+        font-size: 34px;
+    }
+    .botões__ancora{
+        width: 15%;
+    }
+}
