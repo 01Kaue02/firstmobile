@@ -13,6 +13,12 @@
     align-items: center;
     position: relative;
 }
+.container__botao:checked ~ .container__rotulo > .cabeçalho__menu-hamburguer{
+    background-image: url("../imagens/Vector.png");
+}
+.container__botao:checked ~ .container__rotulo{
+    background-color: var(--azul) ;
+}
 .container{
     display: flex;
     align-items: center;
@@ -53,6 +59,7 @@
 .container__texto{
     color: var(--preto);
     text-decoration: none;
+    display: none;
 }
 .opções__botões:checked ~ .lista-menu{
     display: none;
@@ -60,15 +67,20 @@
 .opções{
     display: none;
 }
+.container__titulo, 
+    .container__titulo_negrito{
+        font-family: var(--fonte-segundaria);
+        font-size: 30px;
+    }
+    .container__titulo_negrito{
+        font-weight: 700;
+    }
 
 @media screen and (min-width: 1024px){
     .container__titulo, 
     .container__titulo_negrito{
         font-family: var(--fonte-segundaria);
         font-size: 30px;
-    }
-    .opções__item{
-        display: block;
     }
         .container__titulo{
         font-weight: 400;
@@ -83,24 +95,68 @@
     .opções__item{
         padding: 0 1em;
         text-transform: uppercase;
+        display: block;
     }
     .opções__link{
         text-decoration: none;
         color: var(--preto);
+        align-items: center;
+        display: flex;
     }
     .container__imgt{
         display: none;
 
     }
-    .opções__botões:checked ~ .lista-menu{
+    .opções__botões:checked ~ .lista-menu {
         display: block;
         width: auto;
     }
-    .opções__botões{
+    .opções__botões {
         display: none;
     }
-    .container__texto{
+    .container__texto {
         color: var(--preto);
         text-decoration: none;
+        display: block;
+        margin: 0 1em ;
     }
+    .opções__botões:checked~.opções__rotulo > .opções__item {
+        background-color: var(--azul);
+        color: var(--branco);
+    }
+.opções__item{
+    padding: 2em 1em;
+}
+.lista-menu__item:hover {
+background-color: var(--azul);
+}
+.lista-menu__item:hover > .lista-menu__link{
+    -webkit-text-fill-color: var(--branco);
+    text-decoration: none;
+}
+.container__link{
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    color: var(--preto);
+}
+
+}
+@media screen and (min-width: 1728px){
+    .container__link{
+        align-items: center;
+        display: flex;
+        text-decoration: none;
+        color: var(--preto);
+    }
+    .cabeçalho{
+        padding: 0 2em;
+    }
+    .opções{
+        margin-right: auto;
+    }
+    .container__texto{
+        display: block;
+    }
+    
 }
